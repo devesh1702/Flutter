@@ -10,14 +10,13 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('My First App'),
-        backgroundColor: Colors.cyan,
       ),
       body: Center(
         child: Text(
           'Hello World there are $days! days in june and my name is $name',
           textDirection: TextDirection.ltr,
           style: TextStyle(
-            fontSize: 40.0,
+            fontSize: 10.0,
             color: Colors.blue,
           ),
         ),

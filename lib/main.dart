@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/home.dart';
 import 'package:flutter_application_1/pages/login_page.dart';
+import 'package:flutter_application_1/utils/routes.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -25,6 +26,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       title: 'My First App',
+      debugShowCheckedModeBanner: false,
       themeMode: ThemeMode
           .light, // just change between .light and .dark to change the color of the page
       theme: ThemeData(
@@ -37,8 +39,8 @@ class MyApp extends StatelessWidget {
       routes: {
         //it is used to point towards the page we want to visit
         '/': (context) => LoginPage(),
-        '/home': (context) => HomePage(),
-        "/login": (context) => LoginPage()
+        MyRoutes.homeRoute: (context) => HomePage(),
+        MyRoutes.loginRoute: (context) => LoginPage()
       },
     );
   }

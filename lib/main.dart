@@ -36,6 +36,7 @@ class MyApp extends StatelessWidget {
       darkTheme: ThemeData(
         brightness: Brightness.dark,
       ),
+      initialRoute: MyRoutes.homeRoute,
       routes: {
         //it is used to point towards the page we want to visit
         '/': (context) => LoginPage(),
